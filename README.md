@@ -46,7 +46,7 @@ Get the details of all the products in the database.
 ]
 ```
 
-- [ADD PRODUCTS](/AddMd.md)
+- [ADD PRODUCTS](/AddMD.md)
 
 - [UPDATE PRODUCTS](/UpdateMD.md)
 

@@ -4,27 +4,29 @@ This REST API is created in FLASK
 
 ### POST /api/v1/authenticate_user  
 
-- **Request Data Type** - Object
-- **Request Data Example** - 
+Provide the user with Auth Key
+
+> - **Request Data Type** - Object
+>- **Request Data Example** - 
 ```
 {
     "username" : *your username*, 
     "password" : *yourpassword*
 }
 ```
-### Success Response
-- **Response Data Example** - 
+> ### Success Response
+> - **Response Data Example** - 
 ```
 *Auth Token* 
 ```
-### Error Response
-- **Code:** 403
-- **Response Data Example:**
+> ### Error Response
+> - **Code:** 403
+> - **Response Data Example:**
 ```
 Username not found in database
 Incorrect Password
 ```
-**Info:** *username* or *password* is incorrect
+> **Info:** *username* or *password* is incorrect
 
 ## All endpoints require Authentication  
 

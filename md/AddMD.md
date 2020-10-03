@@ -39,4 +39,4 @@ Product(s) Added
 ```
 Mandatory field is missing
 ```
-> **Info:** POST does not received required fields (product_name,brand_name,category_name,quantity,price,dicount)
+> **Info:** POST does not received required fields (product_name,brand_name,category_name,quantity,price,discount)

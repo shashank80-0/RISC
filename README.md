@@ -1,14 +1,18 @@
+# RESTAPI Documentation
 
-> POST /api/v1/authenticate_user
+This REST API is created in FLASK  
+
+> POST /api/v1/authenticate_user  
+
 - **Request Data Type** - Object
 - **Request Data Example** - {"username" : *your username*, "password" : *yourpassword*}
 - **Response Data Example** - *Unique Authentication Key* 
 
-#### All Endpoints require Authentication
+## All Endpoints require Authentication
 
 header = {"Authorization" : Bearer ***your authentication key***}
 
-> GET /api/v1/get_all_products
+> GET /api/v1/get_all_products  
 
 Get the details of all the products in the database.
 
@@ -16,7 +20,7 @@ Get the details of all the products in the database.
 - **Method:** GET
 - **Auth Required:** YES
 
-#### Success Response
+>> Success Response
 - **Code:** 200
 - **Response Data Example:**
 ```json
@@ -46,11 +50,11 @@ Get the details of all the products in the database.
 ]
 ```
 
-#### [ADD PRODUCTS](/AddMD.md)
+### [ADD PRODUCTS](/AddMD.md)  
 
-#### [UPDATE PRODUCTS](/UpdateMD.md)
+### [UPDATE PRODUCTS](/UpdateMD.md)  
 
-#### [DELETE PRODUCTS](/DeleteMD.md)
+### [DELETE PRODUCTS](/DeleteMD.md)  
 
-#### [FILTER PRODUCTS](/FilterMD.md)
+### [FILTER PRODUCTS](/FilterMD.md)  
 

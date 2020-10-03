@@ -2,7 +2,7 @@
 
 This REST API is created in FLASK  
 
-> POST /api/v1/authenticate_user  
+### POST /api/v1/authenticate_user  
 
 - **Request Data Type** - Object
 - **Request Data Example** - 
@@ -28,17 +28,17 @@ Username not found in database
 Incorrect Password
 
 ```
-**Note:** username or password is incorrect
+**Info:** username or password is incorrect
 
-## All Endpoints require Authentication  
+## All endpoints require Authentication  
 
-**Important:** ```header = {"Authorization" : Bearer ***your Auth Token***}``` must be present to use API
+**Important:** header = {"Authorization" : Bearer ***your Auth Token***} must be present to use API
 
 > Authentication error
 - 403 : Invalid Auth Token
 - 403 : Auth Token missing
 
-> GET /api/v1/get_all_products  
+### GET /api/v1/get_all_products  
 
 Get the details of all the products in the database.
 
@@ -72,17 +72,17 @@ Get the details of all the products in the database.
         "quantity": 9,
         "created_at": "2020-10-02 15:42:58",
         "updated_at": "2020-10-02 21:58:45"
-        }
+    }
 ]
 ```
 
-### [ADD PRODUCTS](md/AddMD.md)  
+- [ADD PRODUCTS](md/AddMD.md)  
 
-### [UPDATE PRODUCTS](md/UpdateMD.md)  
+- [UPDATE PRODUCTS](md/UpdateMD.md)  
 
-### [DELETE PRODUCTS](md/DeleteMD.md)  
+- [DELETE PRODUCTS](md/DeleteMD.md)  
 
-### [FILTER PRODUCTS](md/FilterMD.md)  
+- [FILTER PRODUCTS](md/FilterMD.md)  
 
 
 

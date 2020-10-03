@@ -1,12 +1,12 @@
-> POST /api/v1/get_all_products  
+### POST /api/v1/get_all_products  
 
 Add new product(s)
 
-- **URL:** `/api/v1/add_product`
-- **Method:** POST
-- **Auth Required:** YES
-- **Request Data Type:** Array (or List) of objects 
-- **Request Data Example:**
+> - **URL:** `/api/v1/add_product`
+> - **Method:** POST
+> - **Auth Required:** YES
+> - **Request Data Type:** Array (or List) of objects 
+> - **Request Data Example:**
 ```json
 [
     {
@@ -27,19 +27,16 @@ Add new product(s)
     }
 ]
 ```
-
->> Success Response
-- **Code:** 200
-- **Response Data Example:** 
+> ### Success Response
+> - **Code:** 200
+> - **Response Data Example:** 
 ```
 Product(s) Added
-
 ```
->> Error Response
-- **Code:** 422
-- **Response Data Example:**
+> ### Error Response
+> - **Code:** 422
+> - **Response Data Example:**
 ```
 Mandatory field is missing
-
 ```
-**Note:** POST does not received required fields (product_name,brand_name,category_name,quantity,price,dicount)
+> **Info:** POST does not received required fields (product_name,brand_name,category_name,quantity,price,dicount)

@@ -147,52 +147,7 @@ Update product(s) by *product_id* (STRING)
 Product(s) Updated
 ```
 
-> DELETE /api/v1/update_product_by_id
+- [DELETE PRODUCTS](/DeleteMD.md)
 
-Delete product(s) by *product_id* (INTEGER)
-
-- **URL:** `/api/v1/delete_product_by_id`
-- **Method:** DELETE
-- **Auth Required:** YES
-- **Request Data Type:** Array (or List) of integers
-- **Request Data Example:**
-```json
-[
-    3,
-    5,
-    6
-]
-```
-
-#### Success Response
-- **Code:** 200
-- **Response Data Example:** 
-```
-Product(s) Deleted
-```
-
-> DELETE /api/v1/delete_product_by_name
-
-DELETE product(s) by *product_name* (STRING)
-
-- **URL:** `/api/v1/update_product_by_id`
-- **Method:** PATCH
-- **Auth Required:** YES
-- **Request Data Example:**
-```json
-[
-    "Macbook",
-    "Bean Bag",
-    "Headphone"
-]
-```
-
-#### Success Response
-- **Code:** 200
-- **Response Data Example:** 
-```
-Product(s) Deleted
-```
-
-- [Filter products api](https://github.com/shashank80-0/RISC/blob/master/FilterMD.md)
+- [FILTER PRODUCTS](https://github.com/shashank80-0/RISC/blob/master/FilterMD.md)
 

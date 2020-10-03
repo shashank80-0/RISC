@@ -1,19 +1,51 @@
-# RISC
-32-bit RISC Processor using VERILOG
 
-I hereby declare that this project represents my own ideas in my own words and 
-where other ideas or words have been included, have adequately cited and referenced the original sources.
+> POST /api/v1/authenticate_user
+- Request Data Type - Object
+- Request Data - {"username" : *your username*, "password" : *yourpassword*}
+- Response Data - Unique Authentication Key 
 
-Started as a project for final term in college.
-This project is an implementation of a 32-Bit RISC processor using verilog paper reference below.
+#### All Endpoints require Authentication
 
-Reference of the original paper
+> header = {"Authorization" : Bearer *your authentication key*}
 
-""
-    Galani Tina G., Riya Saini and R.D.Daruwala “Design and Implementation of 32 – bit RISC Processor using Xilinx”, 
-    International Journal of Emerging Trends in Electrical and Electronics (IJETEE – ISSN: 2320-9569) Vol. 5, Issue. 1, July-2013
-""
+> GET /api/v1/get_all_products
+
+Get the details of all the products in the database.
+
+- **URL**: /api/v1/get_all_products
+- **Method**: GET
+- **Auth Required**: YES
+
+#### Success Response
+**Code**: 200
+**Content examples**
+[
+    {
+        "product_id": 2, 
+        "product_name": "Notebook", 
+        "brand_id": 3, 
+        "category_id": 3, 
+        "price": 40000.0, 
+        "discount": 300.0,
+        "quantity": 5, 
+        "created_at": "2020-10-02 15:01:28", 
+        "updated_at": "2020-10-02 21:58:45"
+    }, 
+    {
+        "product_id": 3,
+        "product_name": "Logitech",
+        "brand_id": 3,
+        "category_id": 3,
+        "price": 45000.0,
+        "discount": 400.0,
+        "quantity": 9,
+        "created_at": "2020-10-02 15:42:58",
+        "updated_at": "2020-10-02 21:58:45"
+        }
+]
 
 
-This is not the complete RISC processor, further modules to be implemented are CONTROL UNIT and GENERAL PURPOSE REGISTER. 
-Furthermore we have to verify this design using simulation and compare the performance of our processor with other processors in terms of delay, power dissipation etc.
+
+
+
+

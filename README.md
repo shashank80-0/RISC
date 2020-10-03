@@ -214,8 +214,28 @@ Filter product(s) by product_id (INTEGER)
 - **Code:** 200
 - **Response Data Example:** 
 ```json
-[{"product_id": 2, "product_name": "Notebook", "brand_id": 3, "category_id": 3, "price": 40000.0, "discount": 300.0,
-"quantity": 5, "created_at": "2020-10-02 15:01:28", "updated_at": "2020-10-02 21:58:45"}, {"product_id": 5,
-"product_name": "Legion Y540", "brand_id": 2, "category_id": 2, "price": 80000.0, "discount": 1000.0, "quantity": 10,
-"created_at": "2020-10-02 20:24:43", "updated_at": "2020-10-02 20:24:43"}]
+[
+    {
+        "product_id": 2,
+        "product_name": "Notebook",
+        "brand_id": 3, 
+        "category_id": 3, 
+        "price": 40000.0, 
+        "discount": 300.0,
+        "quantity": 5, 
+        "created_at": "2020-10-02 15:01:28", 
+        "updated_at": "2020-10-02 21:58:45"
+    }, 
+    {
+            "product_id": 5,
+            "product_name": "Legion Y540", 
+            "brand_id": 2, 
+            "category_id": 2, 
+            "price": 80000.0, 
+            "discount": 1000.0, 
+            "quantity": 10,
+            "created_at": "2020-10-02 20:24:43", 
+            "updated_at": "2020-10-02 20:24:43"
+    }
+]
 ```

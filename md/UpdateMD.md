@@ -87,4 +87,3 @@ Mandatory field is missing
 No record found
 ```
 >**Info:** POST received empty list
-```

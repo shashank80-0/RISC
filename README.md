@@ -19,7 +19,7 @@ Get the details of all the products in the database.
 #### Success Response
 - **Code**: 200
 - **Content examples**
-    [
+    `[
         {
             "product_id": 2, 
             "product_name": "Notebook", 
@@ -42,7 +42,7 @@ Get the details of all the products in the database.
             "created_at": "2020-10-02 15:42:58",
             "updated_at": "2020-10-02 21:58:45"
             }
-    ]
+    ]`
 
 
 

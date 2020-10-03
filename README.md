@@ -12,31 +12,23 @@ This REST API is created in FLASK
     "password" : *yourpassword*
 }
 ```
->> Success Response
-
+### Success Response
 - **Response Data Example** - 
 ```
 *Auth Token* 
 ```
-
->> Error Response
-
+### Error Response
 - **Code:** 403
 - **Response Data Example:**
 ```
 Username not found in database
 Incorrect Password
-
 ```
-**Info:** username or password is incorrect
+**Info:** *username* or *password* is incorrect
 
 ## All endpoints require Authentication  
 
-**Important:** header = {"Authorization" : Bearer ***your Auth Token***} must be present to use API
-
-> Authentication error
-- 403 : Invalid Auth Token
-- 403 : Auth Token missing
+**Important:** header = `{"Authorization" : Bearer {your Auth Token}}` must be present to use API
 
 ### GET /api/v1/get_all_products  
 

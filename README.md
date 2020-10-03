@@ -42,13 +42,13 @@ Incorrect Password
 
 Get the details of all the products in the database.
 
-- **URL:** `/api/v1/get_all_products`
-- **Method:** GET
-- **Auth Required:** YES
+> - **URL:** `/api/v1/get_all_products`
+> - **Method:** GET
+> - **Auth Required:** YES
 
->> Success Response
-- **Code:** 200
-- **Response Data Example:**
+> Success Response
+> - **Code:** 200
+> - **Response Data Example:**
 ```json
 [
     {

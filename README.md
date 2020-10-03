@@ -46,11 +46,11 @@ Get the details of all the products in the database.
 ]
 ```
 
-- [ADD PRODUCTS](/AddMD.md)
+#### [ADD PRODUCTS](/AddMD.md)
 
-- [UPDATE PRODUCTS](/UpdateMD.md)
+#### [UPDATE PRODUCTS](/UpdateMD.md)
 
-- [DELETE PRODUCTS](/DeleteMD.md)
+#### [DELETE PRODUCTS](/DeleteMD.md)
 
-- [FILTER PRODUCTS](/FilterMD.md)
+#### [FILTER PRODUCTS](/FilterMD.md)
 

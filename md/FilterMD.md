@@ -1,22 +1,21 @@
-> POST /api/v1/get_product_by_id  
+### POST /api/v1/get_product_by_id  
 
 Filter product(s) by *product_id* (INTEGER)
 
-- **URL:** `/api/v1/get_product_by_id`
-- **Method:** POST
-- **Auth Required:** YES
-- **Request Data Type:** Array (or List) of integers
-- **Request Data Example:**
+> - **URL:** `/api/v1/get_product_by_id`
+> - **Method:** POST
+> - **Auth Required:** YES
+> - **Request Data Type:** Array (or List) of integers
+> - **Request Data Example:**
 ```json
 [
     2,
     5
 ]
 ```
-
->> Success Response
-- **Code:** 200
-- **Response Data Example:** 
+> ### Success Response
+> - **Code:** 200
+> - **Response Data Example:** 
 ```json
 [
     {
@@ -43,34 +42,32 @@ Filter product(s) by *product_id* (INTEGER)
     }
 ]
 ```
-
->> Error Response
-- **Code:** 403
-- **Response Data Example:**
+> ### Error Response
+> - **Code:** 403
+> - **Response Data Example:**
 ```
 Product Ids not received
 ```
-- **Note:** POST received empty list
+> **Info:** POST received empty list
 
-> POST /api/v1/get_product_by_name  
+### POST /api/v1/get_product_by_name  
 
 Filter product(s) by *product_name* (STRING)
 
-- **URL:** `/api/v1/get_product_by_name`
-- **Method:** POST
-- **Auth Required:** YES
-- **Request Data Type:** Array (or List) of strings
-- **Request Data Example:**
+> - **URL:** `/api/v1/get_product_by_name`
+> - **Method:** POST
+> - **Auth Required:** YES
+> - **Request Data Type:** Array (or List) of strings
+> - **Request Data Example:**
 ```json
 [
     "Legion Y540",
     "Notebook"
 ]
 ```
-
->> Success Response
-- **Code:** 200
-- **Response Data Example:** 
+> ### Success Response
+> - **Code:** 200
+> - **Response Data Example:** 
 ```json
 [
     {
@@ -97,35 +94,32 @@ Filter product(s) by *product_name* (STRING)
     }
 ]
 ```
-
->> Error Response
-- **Code:** 403
-- **Response Data Example:**
+> ### Error Response
+> - **Code:** 403
+> - **Response Data Example:**
 ```
 Product names not received
 ```
-- **Note:** POST received empty list
+> **Info:** POST received empty list
 
-
-> POST /api/v1/get_product_by_brand  
+### POST /api/v1/get_product_by_brand  
 
 Filter product(s) by *brand_name* (STRING)
 
-- **URL:** `/api/v1/get_product_by_brand`
-- **Method:** POST
-- **Auth Required:** YES
-- **Request Data Type:** Array (or List) of strings
-- **Request Data Example:**
+> - **URL:** `/api/v1/get_product_by_brand`
+> - **Method:** POST
+> - **Auth Required:** YES
+> - **Request Data Type:** Array (or List) of strings
+> - **Request Data Example:**
 ```json
 [
     "Kingston",
     "Lenovo"
 ]
 ```
-
->> Success Response
-- **Code:** 200
-- **Response Data Example:** 
+> ### Success Response
+> - **Code:** 200
+> - **Response Data Example:** 
 ```json
 {
     "Apple": [
@@ -168,24 +162,23 @@ Filter product(s) by *brand_name* (STRING)
     ]
 }
 ```
-
->> Error Response
-- **Code:** 403
-- **Response Data Example:**
+> ### Error Response
+> - **Code:** 403
+> - **Response Data Example:**
 ```
 Brand names not received
 ```
-- **Note:** POST received empty list
+> **Info:** POST received empty list
 
-> POST /api/v1/get_product_by_category  
+### POST /api/v1/get_product_by_category  
 
 Filter product(s) by *category_name* (STRING)
 
-- **URL:** `/api/v1/get_product_by_category`
-- **Method:** POST
-- **Auth Required:** YES
-- **Request Data Type:** Array (or List) of strings
-- **Request Data Example:**
+> - **URL:** `/api/v1/get_product_by_category`
+> - **Method:** POST
+> - **Auth Required:** YES
+> - **Request Data Type:** Array (or List) of strings
+> - **Request Data Example:**
 ```json
 [   
     "Speaker",
@@ -193,10 +186,9 @@ Filter product(s) by *category_name* (STRING)
     "Laptop"
 ]
 ```
-
->> Success Response
-- **Code:** 200
-- **Response Data Example:** 
+> ### Success Response
+> - **Code:** 200
+> - **Response Data Example:** 
 ```json
 {
     "Speaker": [], 
@@ -228,34 +220,32 @@ Filter product(s) by *category_name* (STRING)
     ]
 }
 ```
-
->> Error Response
-- **Code:** 403
-- **Response Data Example:**
+> ### Error Response
+> - **Code:** 403
+> - **Response Data Example:**
 ```
 Categories names not received
 ```
-- **Note:** POST received empty list
+> **Note:** POST received empty list
 
-> POST /api/v1/get_product_by_price_range  
+### POST /api/v1/get_product_by_price_range  
 
 Filter product(s) by *price* (INTEGER/FLOAT) range (price_1,price_2)
 
-- **URL:** `/api/v1/get_product_by_price_range`
-- **Method:** POST
-- **Auth Required:** YES
-- **Request Data Type:** Array (or List) of exact two integers/float (min_price and max_price (*any order*))
-- **Request Data Example:**
+> - **URL:** `/api/v1/get_product_by_price_range`
+> - **Method:** POST
+> - **Auth Required:** YES
+> - **Request Data Type:** Array (or List) of exact two integers/float (min_price and max_price (*any order*))
+> - **Request Data Example:**
 ```json
 [   
     65000,
     20000
 ]
 ```
-
->> Success Response
-- **Code:** 200
-- **Response Data Example:** 
+> ### Success Response
+> - **Code:** 200
+> - **Response Data Example:** 
 ```json
 [
     {
@@ -282,25 +272,23 @@ Filter product(s) by *price* (INTEGER/FLOAT) range (price_1,price_2)
     }
 ]
 ```
-
->> Error Response
-- **Code:** 422
-- **Response Data Example:**
+> ### Error Response
+> - **Code:** 422
+> - **Response Data Example:**
 ```
 Invalid Request Parameters
 ```
-- **Note:** POST does not received array(or list) of length 2 
+> **Note:** POST does not received array(or list) of length 2 
 
-
-> POST /api/v1/get_product_by_minimum_discount  
+### POST /api/v1/get_product_by_minimum_discount  
 
 Filter product(s) by minimum *discount* (INTEGER/FLOAT) percentage
 
-- **URL:** `/api/v1/get_product_by_minimum_discount`
-- **Method:** POST
-- **Auth Required:** YES
-- **Request Data Type:** Array (or List) of integers
-- **Request Data Example:**
+> - **URL:** `/api/v1/get_product_by_minimum_discount`
+> - **Method:** POST
+> - **Auth Required:** YES
+> - **Request Data Type:** Array (or List) of integers
+> - **Request Data Example:**
 ```json
 [
     0.9,
@@ -308,9 +296,9 @@ Filter product(s) by minimum *discount* (INTEGER/FLOAT) percentage
     1
 ]
 ```
->> Success Response
-- **Code:** 200
-- **Response Data Example:** 
+> ### Success Response
+> - **Code:** 200
+> - **Response Data Example:** 
 ```json
 {
     "0.9": [
@@ -342,11 +330,10 @@ Filter product(s) by minimum *discount* (INTEGER/FLOAT) percentage
     ]
 }
 ```
-
->> Error Response
-- **Code:** 400
-- **Response Data Example:**
+> #### Error Response
+> - **Code:** 400
+> - **Response Data Example:**
 ```
 Invalid Parameters Received
 ```
-- **Note:** POST received non-integers value
+> **Info:** POST received non-integer value

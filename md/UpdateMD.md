@@ -1,12 +1,12 @@
-> PATCH /api/v1/update_product_by_id  
+### PATCH /api/v1/update_product_by_id  
 
 Update product(s) by *product_id* (INTEGER)
 
-- **URL:** `/api/v1/update_product_by_id`
-- **Method:** PATCH
-- **Auth Required:** YES
-- **Request Data Type:** Array (or List) of objects 
-- **Request Data Example:**
+> - **URL:** `/api/v1/update_product_by_id`
+> - **Method:** PATCH
+> - **Auth Required:** YES
+> - **Request Data Type:** Array (or List) of objects 
+> - **Request Data Example:**
 ```json
 [
     {   
@@ -23,41 +23,35 @@ Update product(s) by *product_id* (INTEGER)
     }
 ]
 ```
-
->> Success Response
-- **Code:** 200
-- **Response Data Example:** 
+> ### Success Response
+> - **Code:** 200
+> - **Response Data Example:** 
 ```
 Product(s) Updated
-
 ```
->> Error Response
-- **Code:** 422
-- **Response Data Example:**
+> ### Error Response
+> - **Code:** 422
+> - **Response Data Example:**
 ```
 Mandatory field is missing
-
 ```
-**Note:** POST does not received product_id
+> **Info:** POST does not received *product_id*  
 
-- **Code:** 404
-- **Response Data Example:**
+> - **Code:** 404
+> - **Response Data Example:**
 ```
 No record found
-
 ```
-**Note:** POST received empty list
+> **Info:** POST received empty list
 
-```
-
-> PATCH /api/v1/update_product_by_name  
+### PATCH /api/v1/update_product_by_name  
 
 Update product(s) by *product_id* (STRING)
 
-- **URL:** `/api/v1/update_product_by_id`
-- **Method:** PATCH
-- **Auth Required:** YES
-- **Request Data Example:**
+> - **URL:** `/api/v1/update_product_by_id`
+> - **Method:** PATCH
+> - **Auth Required:** YES
+> - **Request Data Example:**
 ```json
 [
     {   
@@ -73,29 +67,24 @@ Update product(s) by *product_id* (STRING)
     }
 ]
 ```
-
->> Success Response
-- **Code:** 200
-- **Response Data Example:** 
+> ### Success Response
+> - **Code:** 200
+> - **Response Data Example:** 
 ```
 Product(s) Updated
 ```
-
->> Error Response
-- **Code:** 422
-- **Response Data Example:**
+> ### Error Response
+> - **Code:** 422
+> - **Response Data Example:**
 ```
 Mandatory field is missing
-
 ```
-**Note:** POST does not received product_name
+**Info:** POST does not received *product_name*
 
-- **Code:** 404
-- **Response Data Example:**
+> - **Code:** 404
+> - **Response Data Example:**
 ```
 No record found
-
 ```
-**Note:** POST received empty list
-
+>**Info:** POST received empty list
 ```

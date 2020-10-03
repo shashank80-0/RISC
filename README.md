@@ -46,7 +46,7 @@ Get the details of all the products in the database.
 > - **Method:** GET
 > - **Auth Required:** YES
 
-> #### Success Response
+> ### Success Response
 > - **Code:** 200
 > - **Response Data Example:**
 ```json
